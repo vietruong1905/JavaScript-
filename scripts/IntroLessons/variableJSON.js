@@ -8,8 +8,8 @@ console.log('');
 
 /*
 let person1 = {
-  firstName =" Viet" ;
-  lastName = "Truong";
+  firstName =" Viet",
+  lastName = "Truong",
   age = " 17";
   favoriteNumber = " 21";
   hair ="black" ;
@@ -37,3 +37,7 @@ let person3 = {
   female="fasle";
   other = "false";
 }
+
+ console.console.log(person1.LastName);
+  console.console.log(person2.LastName);
+   console.console.log(person3.LastName);
