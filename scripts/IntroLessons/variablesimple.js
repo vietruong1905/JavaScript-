@@ -15,4 +15,11 @@ let hair = 'black';
 
 let male = true;
 let female = false;
-let other = false; 
+let other = false;
+
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+console.log(sport);
+console.log(school);
+console.log(music);
