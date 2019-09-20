@@ -23,10 +23,17 @@ function simpleOperators (numberA,numberB) {
 
 /Illustrate a WHILE Loop, skip couting
  function howManyTimes (numberStart, numberEnd, skipCount){
-   while (numberStart<numberEnd){
-console.log    (numberStart+= skipCout);
+   while (numberStart < numberEnd){
+console.log(numberStart += skipCout);
   }
 }
+ function trictEquality (firstOperand, secondOperand) {
+   console.log(firstOperand === secondOperand);
+ }
+ function customoerType (points){
+    return type = point > 100 ? 'gold': 'silver'
+  }
+
 let number = [4,7,13,99,0,100,5,1,'1'];
 
 simpleOperators(number[0], number[1]);
@@ -36,3 +43,7 @@ simpleOperators(number[4], number[5]);
 skipCpinting (number[0], number[6], number[1]);
 skipCpinting (number[5], number[3], number[2]);
 howManyTimes(number[0],number[6],number[7]);
+LooseEquality (number[7], number[8]);
+trictEquality (number[7], number[8]);
+
+console.log(customoerType (number[3]));
