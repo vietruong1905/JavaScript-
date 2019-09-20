@@ -12,11 +12,13 @@ function simpleOperators (numberA,numberB) {
   console.log(numberA, numberB, 'mulitplying', adding);
   console.log(numberA, numberB, 'division', adding);
   console.log(numberA, numberB, 'modulus', adding);
-
-
-
-
 }
+ skip count by ____ for ____ times staring at _____
+ function skipCpinting ()
+
+
+
+
 let number = [4,7,13,99,0,100,5,1,'1']
 
 
