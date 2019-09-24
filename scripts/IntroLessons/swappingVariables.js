@@ -17,7 +17,8 @@ let vietTruong = {
 
  console.log(vietTruong);
  console.log(luongHoang);
-  let swap= vietTruong[1];
-  vietTruong[1] =  luongHoang[1];
+  let swap= vietTruong.last;
+  vietTruong.last =  luongHoang.last;
+  luonghoang.lats = swap;
   console.log(vietTruong);
   console.log(luongHOang);
