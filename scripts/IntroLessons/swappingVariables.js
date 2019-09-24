@@ -16,7 +16,7 @@ let vietTruong = {
  }
 
  console.log(vietTruong);
- console.log(luongHOang);
+ console.log(luongHoang);
   let swap= vietTruong[1];
   vietTruong[1] =  luongHoang[1];
   console.log(vietTruong);
