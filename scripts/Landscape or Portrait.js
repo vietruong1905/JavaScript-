@@ -13,7 +13,7 @@ function testNaN (number) {
     return "Input Validated"
   }
 }
-<<<<<<< HEAD
+ 
 
 function geometry (width, height) { //Notice these parameters are local and do not mix with "number" variable
   if (width == height) return 'Square'; //must be first, return will not allow rest of code to run
@@ -22,14 +22,14 @@ function geometry (width, height) { //Notice these parameters are local and do n
 }
 
 function checkboxes() {
-=======
+
  function geometry (width,height) {
    if (width == height) return 'square'
    return (width > height) ? 'Landscape' : 'Portrait' ;
  }
 
  function checkboxes() {
->>>>>>> 5b68ed997ca434a5183e3a022a240cda9f960bdb
+
   let checkbox1, checkbox2, checkbox3;
   checkbox1 = document.getElementById('Checkbox1').checked;
   checkbox2 = document.getElementById('Checkbox2').checked;
@@ -63,34 +63,31 @@ let text;
 firstNumber = document.getElementById('textfield1').value;
 document.getElementById('validityTest1').innerHTML = alert ( testNaN (firstNumber));
 document.getElementById('validityTest1').innerHTML = testNaN (firstNumber);
-<<<<<<< HEAD
-testNaN (firstNumber);
-=======
-//testNaN (firstNumber);
->>>>>>> 5b68ed997ca434a5183e3a022a240cda9f960bdb
 
-// Get the Height-value from id=textfield2
+testNaN (firstNumber);
+
+//testNaN (firstNumber);
+ // Get the Height-value from id=textfield2
 secondNumber = document.getElementById('textfield2').value;
 
-<<<<<<< HEAD
+
 document.getElementById('validityTest2').innerHTML = alert ( testNaN (secondNumber));
 document.getElementById('validityTest2').innerHTML = testNaN (secondNumber);
-=======
+
 document.getElementById('validityTest1').innerHTML = alert ( testNaN (secondNumber));
 document.getElementById('validityTest1').innerHTML = testNaN (secondNumber);
->>>>>>> 5b68ed997ca434a5183e3a022a240cda9f960bdb
+
 
  if (stop == true) {
    document.getElementById("answer").innerHTML = "Restart the example, a width or height needs to be a number."
  } else {
-<<<<<<< HEAD
+
     console.log("The display geometry is", geometry (firstNumber, secondNumber) );
     document.getElementById('answer').innerHTML = "This display is " + geometry (firstNumber,secondNumber);
-=======
+
     console.log("The display geometry is", geometry (firstNumber, secondNumber));
      document.getElementById("answer").innerHTML = "This display is " + geometry (firstNumber, secondNumber);
->>>>>>> 5b68ed997ca434a5183e3a022a240cda9f960bdb
- }
+  }
 
 
 
