@@ -13,7 +13,7 @@ function testNaN (number) {
     return "Input Validated"
   }
 }
- 
+
 
 function geometry (width, height) { //Notice these parameters are local and do not mix with "number" variable
   if (width == height) return 'Square'; //must be first, return will not allow rest of code to run
@@ -21,14 +21,12 @@ function geometry (width, height) { //Notice these parameters are local and do n
   //Seems odd, the inequality, here, is reading the opposite
 }
 
-function checkboxes() {
-
  function geometry (width,height) {
    if (width == height) return 'square'
    return (width > height) ? 'Landscape' : 'Portrait' ;
  }
 
- function checkboxes() {
+function checkboxes() {
 
   let checkbox1, checkbox2, checkbox3;
   checkbox1 = document.getElementById('Checkbox1').checked;
@@ -51,9 +49,8 @@ function checkboxes() {
   }
 }
 
-
 function main() {
- console.log("It works");
+console.log("It works");
 
 let firstNumber;
 let secondNumber;
@@ -88,8 +85,4 @@ document.getElementById('validityTest1').innerHTML = testNaN (secondNumber);
     console.log("The display geometry is", geometry (firstNumber, secondNumber));
      document.getElementById("answer").innerHTML = "This display is " + geometry (firstNumber, secondNumber);
   }
-
-
-
-
-  }
+}
