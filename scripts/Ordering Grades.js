@@ -42,7 +42,7 @@ function orderingThree (first, second,third,fourth) { //Notice these parameters 
   if (first <= second) {
     if (second <= third) {
       if (third <= fourth) {
-      return first + ", " second + ", " third + "," fourth+ ; 
+      return first + ", " second + ", " third + "," fourth;
     }
   } else {
     return "Check program for errors"
@@ -50,10 +50,11 @@ function orderingThree (first, second,third,fourth) { //Notice these parameters 
 }
 
 function checkboxes() {
-  let checkbox1, checkbox2, checkbox3;
+  let checkbox1, checkbox2, checkbox3, checkbox4;
   checkbox1 = document.getElementById('Checkbox1').checked;
   checkbox2 = document.getElementById('Checkbox2').checked;
   checkbox3 = document.getElementById('Checkbox3').checked;
+  checkbox4 = document.getElementById('Checkbox4').checked;
   if ( checkbox1 == true ) {
     document.getElementById('checkbox1_answer').innerHTML = "False, 50% is less than 60%";
   } else {
@@ -69,13 +70,18 @@ function checkboxes() {
   } else {
     document.getElementById('checkbox3_answer').innerHTML = "Answer?";
   }
+  if ( checkbox4 == true ) {
+    document.getElementById('checkbox4_answer').innerHTML = "an con cac";
+  } else {
+    document.getElementById('checkbox4_answer').innerHTML = "Answer?";
+  }
 }
 
 // This coding illustrates the advanced method
 function main() {
   //console.log("It works");
 
-  let firstNumber, secondNumber, thirdNumber;
+  let firstNumber, secondNumber, thirdNumber; fourthNumber;
 
   //Get the Width-value from id=textfield1
   firstNumber = document.getElementById('textfield1').value;
@@ -95,17 +101,23 @@ function main() {
   document.getElementById('validityTest3').innerHTML = alert ( testNaN (thirdNumber));
   document.getElementById('validityTest3').innerHTML = testNaN (thirdNumber);
 
+  fourthNumber = document.getElementById('textfield4').value;
+  //testNaN (secondNumber);
+  document.getElementById('validityTest4').innerHTML = alert ( testNaN (fourthNumber));
+  document.getElementById('validityTest4').innerHTML = testNaN (fourthNumber);
+
+
 
   //Illustrates one example of character escapes
-  console.log("In memory, \n the first number is " + firstNumber + " and \n the second number is " + secondNumber + " and \n the third number is " + thirdNumber);
+  console.log("In memory, \n the first number is " + firstNumber + " and \n the second number is " + secondNumber + " and \n the third number is " + thirdNumber + " and \n the fourth number is " + fourthNumber);
 
   //Final Output to inner HTML & Console
 
   if (stop == true) {
     document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
   } else {
-    console.log("The smallest to largest order is ", orderingThree (firstNumber, secondNumber, thirdNumber) );
-    document.getElementById('answer').innerHTML = "The numbers " + firstNumber + ", " + secondNumber + ", " + thirdNumber + " in order from smallest to largets is ... \n" +
-    orderingThree(firstNumber, secondNumber, thirdNumber);
+    console.log("The smallest to largest order is ", orderingfour (firstNumber, secondNumber, thirdNumber,fourthNumber );
+    document.getElementById('answer').innerHTML = "The numbers " + firstNumber + ", " + secondNumber + ", " + thirdNumber + "," + fourthNumber + " in order from smallest to largets is ... \n" +
+    orderingfour(firstNumber, secondNumber, thirdNumber, fourthNumber);
   }
 }
