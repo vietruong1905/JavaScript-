@@ -32,14 +32,17 @@ function orderingThree (first, second,third,fourth) { //Notice these parameters 
       second = memory1;
     }
     if (third > fourth) {
-      memory1 =
+      memory1 = fourth;
+      fourth = third;
+      third = memory1;
     }
 
   //Final Check: this checks if numbers are in order
   //Also checks if numbers are equal and catches if something is wrong
   if (first <= second) {
     if (second <= third) {
-      return first + ", " + second + ", " + third;
+      if (third <= fourth) {
+      return first + ", " second + ", " third + "," fourth+ ; 
     }
   } else {
     return "Check program for errors"
