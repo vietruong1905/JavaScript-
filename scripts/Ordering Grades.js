@@ -38,12 +38,12 @@ function orderingThree (first, second,third,fourth) { //Notice these parameters 
     }
 
   //Final Check: this checks if numbers are in order
-  //Also checks if numbers are equal and catches if something is wrong
+  //so checks if numbers are equal and catches if something is wrong
   if (first <= second) {
     if (second <= third) {
       if (third <= fourth) {
       return first + ", " second + ", " third + "," fourth;
-    }
+    }}}
   } else {
     return "Check program for errors"
   }
