@@ -14,10 +14,9 @@ function testNaN (number) {
   }
 }
 
-function geometry (width, height) { //Notice these parameters are local and do not mix with "number" variable
-  if (width == height) return 'Square'; //must be first, return will not allow rest of code to run
-  return (width > height) ? 'Landscape' : 'Portrait'; //ternary operator example
-  //Seems odd, the inequality, here, is reading the opposite
+function smallesToLargest (firstNumber, secondNumber) { //Notice these parameters are local and do not mix with "number" variable
+  if (firstNumber == secondNumber) return 'Both number are the same'; //must be first, return will not allow rest of code to run
+return (firstNumber < secondNumber) ? firstNumber + ', ' + secondNumber: secondNumber + ', ' + firstNumber;  //Seems odd, the inequality, here, is reading the opposite
 }
 
 function checkboxes() {
@@ -60,7 +59,7 @@ document.getElementById('validityTest2').innerHTML = testNaN (secondNumber);
  if (stop == true) {
    document.getElementById("answer").innerHTML = "Restart the example, a width or height needs to be a number."
  } else {
-    console.log("The display geometry is", geometry (firstNumber, secondNumber) );
-    document.getElementById('answer').innerHTML = "This display is " + geometry (firstNumber,secondNumber);
+    console.log("The display smallesToLargest is", smallesToLargest (firstNumber, secondNumber) );
+    document.getElementById('answer').innerHTML = "This display is " + smallesToLargest (firstNumber,secondNumber);
  }
 }
