@@ -11,7 +11,7 @@ function testNaN (number) {
   }
 }
 
-function orderingfour (first, second,third,fourth) {
+function orderingfour (first, second, third, fourth) {
   let memory1;
 
   while (first > second || second > third || third > fourth) {
@@ -30,14 +30,15 @@ function orderingfour (first, second,third,fourth) {
       fourth = third;
       third = memory1;
     }
+  }
 
 
   if (first <= second) {
     if (second <= third) {
       if (third <= fourth) {
       return first + ", " + second + ", " + third + "," + fourth;
-    }}}}
-   else {{{{
+    }}}
+   else {
     return "Check program for errors"
   }
 }
@@ -74,7 +75,7 @@ function checkboxes() {
 function main() {
 
 
-  let firstNumber, secondNumber, thirdNumber; fourthNumber;
+  let firstNumber, secondNumber, thirdNumber, fourthNumber;
 
 
   firstNumber = document.getElementById('textfield1').value;
@@ -109,7 +110,7 @@ function main() {
   if (stop == true) {
     document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
   } else {
-    console.log("The smallest to largest order is ", orderingfour (firstNumber, secondNumber, thirdNumber,fourthNumber );
+    console.log("The smallest to largest order is " + orderingfour (firstNumber, secondNumber, thirdNumber, fourthNumber));
     document.getElementById('answer').innerHTML = "The numbers " + firstNumber + ", " + secondNumber + ", " + thirdNumber + "," + fourthNumber + " in order from smallest to largets is ... \n" +
     orderingfour(firstNumber, secondNumber, thirdNumber, fourthNumber);
   }
