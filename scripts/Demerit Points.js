@@ -72,7 +72,7 @@ function main() {
 
  //IF Statement to autopopulate speed limit and catch errors
  if (firstNumber == '') {
-   firstNumber = 70;
+   firstNumber = 1000;
  } else if (firstNumber != '') {
  } else {
    console.log("Speed Limit errors in .js file, please review");
