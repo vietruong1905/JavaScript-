@@ -36,8 +36,9 @@ function demeritCalculation (speedLimit, speed) { //Notice these parameters are 
  //Note: to create WHILE Statement, look for number patterns Above
  //Note: to create FOR Statement, must divide to calculate maximum demerit points (x-1)
  //Notice only inequlaity has changed below
- if (speed >= speedLimit + 14*5) return 'You have doubled the speed limit, your license is taken away';
+ if (speed >= speedLimit + 14*5) return 'your speed greater than speedLimit';
  return 'Check the Algorithm for errors';
+
 }
 
 function checkboxes() {
@@ -104,7 +105,7 @@ function main() {
  if (stop == true) {
    document.getElementById('answer').innerHTML = "Restart the example, speed limit or speed need to be entered, non-zero, values."
  } else {
-   console.log("Demerit Calculation is: ", demeritCalculation (firstNumber, secondNumber) );
-   document.getElementById('answer').innerHTML = "Demerit Calculation is: " + demeritCalculation (firstNumber, secondNumber);
+   console.log("Answer is: ", demeritCalculation (firstNumber, secondNumber) );
+   document.getElementById('answer').innerHTML = "Answer is : " + demeritCalculation (firstNumber, secondNumber);
  }
 }

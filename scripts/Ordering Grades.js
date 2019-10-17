@@ -31,8 +31,6 @@ function orderingfour (first, second, third, fourth) {
       third = memory1;
     }
   }
-
-
   if (first <= second) {
     if (second <= third) {
       if (third <= fourth) {
